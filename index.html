@@ -1162,64 +1162,55 @@ display: none;
 								
 																</div>
 																<div class="product-counter-info" style="display: block">
-																	<h3>ΤΟ ΜΟΝΟ ΠΟΥ ΧΡΕΙΑΖΕΤΑΙ ΕΙΝΑΙ ΝΑ ΕΙΣΑΓΕΤΕ ΤΟ ΟΝΟΜΑ ΚΑΙ ΤΟΝ ΑΡΙΘΜΟ ΤΟΥ ΤΗΛΕΦΩΝΟΥ ΣΑΣ.<br>
-																		<br><!--<span class="time_remains" id="min">10</span> : <span class="time_remains" id="sec">00</span>-->
-																	</h3>
-																	
 																	<div id="form">
-																		
-																		<div id="form_image">
-																			<div class="form_image_wrap_image">
-																				<img src="images/prod.png" alt="">
+																		<div class="order_block">
+																			
+																			
+																			<h3>ΤΟ ΜΟΝΟ ΠΟΥ ΧΡΕΙΑΖΕΤΑΙ ΕΙΝΑΙ ΝΑ ΕΙΣΑΓΕΤΕ ΤΟ ΟΝΟΜΑ ΚΑΙ ΤΟΝ ΑΡΙΘΜΟ ΤΟΥ ΤΗΛΕΦΩΝΟΥ ΣΑΣ.<br><!--<span class="time_remains" id="min" style="color: red;">10</span> :
+              <span class="time_remains" id="sec" style="color: red;">00</span>-->
+																			</h3>
+																			<div id="form_image" style="margin-bottom: -80px">
+																				<div class="form_image_wrap_image">
+																					<img src="images/prod.png" alt="">
+																				</div>
+																			</div>
+																			
+																			
+																			<div class="form_wrap" id="objectScrollAttention">
+																				<form method="post" geo="es" action="api.php" onsubmit="return validate_form(this, 'Por favor ingrese un número de teléfono válido');">
+																					
+																					<input name="subid" type="hidden" value="{subid}">
+																					<input name="px" type="hidden" value="{px}">
+																					<input name="bayer" type="hidden" value="{bayer}">
+																					
+																					<label class="discount">Έκπτωση 50%</label>
+																					<label class="timeleft">υπολειπόμενος χρόνος</label>
+																					<label class="timer">00 <span class="free">: </span><span id="min">10</span>
+																						<span class="free">:</span> <span id="sec">00</span></label>
+																					
+																					<label class="hours">ώρες λεπτά δευτερόλεπτα</label>
+																					
+																					<div id="price">
+																						<div id="price-new"><b>39€</b></div>
+																						<div id="price-old"><b>78€</b></div>
+																					</div>
+																					
+																					<label class="example">Για παράδειγμα  : <em>Λυδία</em></label>
+																					<input name="name" type="text" placeholder="Όνομα" required="">
+																					
+																					<label class="example">Για παράδειγμα : <em>+30 XXXXXXXXXX</em></label>
+																					<input name="phone" type="tel" placeholder="Τηλέφωνο (ενεργό κινητό)" required="">
+																					
+																					<button type="submit">ΠΑΡΑΓΓΕΙΛΕΤΕ</button>
+																					
+																					<div id="protection">
+																						<div class="protection-icon"></div>
+																						<div><strong>Μην ανησυχείτε, οι courier αλλάζουν τακτικά τις μάσκες και τα γάντια. Ανέπαφη παράδοση και πληρωμή.</strong></div>
+																					</div>
+																				
+																				</form>
 																			</div>
 																		</div>
-																		
-																		<style>
-																			label.timer,
-																			label.timer > span {
-																				font-family: Arial, sans-serif!important;
-																				font-weight: bold;
-																			}
-																			label.timer > span {
-																				color: red;
-																			}
-																			label.timer > span.free {
-																				color: #333333;
-																			}
-																		</style>
-																		
-																		<div class="form_wrap" id="objectScrollAttention">
-																			<form method="POST" geo="gr" action="api.php" onsubmit="return validate_form(this, 'Πληκτρολογηστε τον σωστο αριθμο τηλεφωνου');">
-																				<label class="descount">Έκπτωση -50%</label>
-																				
-																				<label class="timer"><span id="min">10</span>
-																					<span class="free">:</span> <span id="sec">00</span></label>
-																				
-																				<div id="price">
-																					<div class="price_new">
-																						39 €
-																					</div>
-																					<div class="price_old">
-																						78 €
-																					</div>
-																				</div>
-																				
-																				<center><label class="inp_name">Ονοματεπώνυμο</label></center>
-																				<input name="name" placeholder="" required="" type="text">
-																				
-																				<center><label class="inp_phone">Τηλέφωνο (ενεργό κινητό)
-																				</label></center>
-																				<input name="phone" placeholder="" required="" type="tel" id="phone">
-																				
-																				<input name="subid" type="hidden" value="{subid}">
-																				<input name="px" type="hidden" value="{px}">
-																				<input name="bayer" type="hidden" value="{bayer}">
-																				<br>
-																				<button type="submit" class="btnn">ΠΑΡΑΓΓΕΛΙΑ</button>
-																			
-																			</form>
-																		</div>
-																	
 																	</div>
 																	<br>
 																	<!--Form END-->
